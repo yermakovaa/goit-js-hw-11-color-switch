@@ -191,7 +191,7 @@ module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
 },{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/colors.js":[function(require,module,exports) {
 // Массив цветов в hex-формате
-var colors = ['#FFFFFF', '#2196F3', '#4CAF50', '#FF9800', '#009688', '#795548'];
+var colors = ['#FF5668', '#FFFFFF', '#2196F3', '#FFC0CB', '#4CAF50', '#FF9800', '#FF69B4', '#4169E1', '#808000', '#009688', '#795548', '#00FFFF', '#FFFF00', '#008000', '#FF00FF', '#800080', '#00FF00', '#FFA07A', '#C7A1BA', '#D2B29B', '#00CBA3'];
 var CHANGE_COLORS_DELAY = 1000;
 var timeoutId = null;
 var isActive = false;
@@ -264,7 +264,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63804" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64553" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
