@@ -35,6 +35,7 @@ function onStartClick() {
 
 function onStopClick() {
   clearTimeout(timeoutId);
+  isActive = false;
 }
 
 function addBgColor() {
