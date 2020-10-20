@@ -11,7 +11,7 @@ button {
   text-transform: uppercase;
 
   color: $ordinaryColor;
-  border: 1px solid $accentColor;
+  border: 3px solid $accentColor;
   border-radius: 25px;
   cursor: pointer;
   transition: color $transition, background-color $transition;
