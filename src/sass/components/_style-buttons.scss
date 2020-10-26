@@ -1,7 +1,6 @@
 button {
   display: inline-block;
   padding: 10px 30px;
-  background-color: $contrastColor;
 
   font-family: $textFont;
   font-weight: 600;
@@ -10,19 +9,23 @@ button {
   letter-spacing: 0.09em;
   text-transform: uppercase;
 
-  color: $ordinaryColor;
-  border: 3px solid $accentColor;
-  border-radius: 25px;
+  color: $textColor;
+  border-radius: 4px;
   cursor: pointer;
-  transition: color $transition, background-color $transition;
 
   &:not(:last-child) {
     margin-right: 30px;
   }
 
-  &:hover,
-  &:focus {
-    color: $contrastColor;
-    background-color: $accentColor;
+  &:disabled {
+    background-color: $disabledColor;
   }
+}
+
+.start-btn {
+  background-color: $startBtnColor;
+}
+
+.stop-btn {
+  background-color: $stopBtnColor;
 }
