@@ -32,6 +32,8 @@ const refs = {
   stop: document.querySelector('button[data-action="stop"]'),
 };
 
+refs.stop.disabled = true;
+
 // Для генерации случайного числа (индекс элемента массива цветов)
 const randomIntegerFromInterval = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
@@ -46,11 +48,15 @@ function onStartClick() {
   }
   timeoutId = setInterval(addBgColor, CHANGE_COLORS_DELAY);
   isActive = true;
+  refs.start.disabled = true;
+  refs.stop.disabled = false;
 }
 
 function onStopClick() {
   clearTimeout(timeoutId);
   isActive = false;
+  refs.start.disabled = false;
+  refs.stop.disabled = true;
 }
 
 function addBgColor() {
